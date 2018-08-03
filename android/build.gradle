@@ -23,7 +23,6 @@ def DEFAULT_BUILD_TOOLS_VERSION = "27.0.3"
 def DEFAULT_TARGET_SDK_VERSION = 26
 def DEFAULT_SUPPORT_LIB_VERSION = "26.1.0"
 def DEFAULT_GOOGLE_PLAY_SERVICES_VERSION = "+"
-def DEFAULT_FIREBASE_MESSAGING_VERSION = "+"
 
 android {
     compileSdkVersion project.hasProperty('compileSdkVersion') ? project.compileSdkVersion : DEFAULT_COMPILE_SDK_VERSION
@@ -49,6 +48,6 @@ dependencies {
     
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile "com.android.support:appcompat-v7:$supportLibVersion"
-    compile "com.google.android.gms:play-services-gcm:$googlePlayServicesVersion"
+    compile "com.google.android.gms:play-services-ads:$googlePlayServicesVersion"
     compile 'com.facebook.react:react-native:+'
 }
