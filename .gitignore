@@ -18,3 +18,4 @@ examples/Basic/ios/Podfile.lock
 examples/Basic/ios/Pods/
 node_modules/
 .vscode/
+yarn-error.log
